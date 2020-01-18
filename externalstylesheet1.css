@@ -2,9 +2,9 @@ body {
   text-align: center;
   background-color: #1d1f20;
 }
-.wrapper {
+.titletext {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   width: 90%;
   font-size: 0;
@@ -17,6 +17,28 @@ p {
   color: #eee;
   opacity: 0.3;
 }
+
+a{
+  background:0 0;
+  color:#c8c8c8;
+  text-decoration:underline;
+  outline: 0;
+}
+
+/* a:focus{
+  outline:0;
+  text-decoration:underline;
+} */
+
+a:active, a:hover{
+  outline:dotted;
+  text-decoration:none;
+}
+
+a:hover:before, a:hover::after {
+  content:'_'
+}
+
 .letter {
   width: 24px;
   display: inline-block;
