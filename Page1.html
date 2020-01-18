@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+    <head>
+        <link href="externalstylesheet.css" rel="stylesheet" type="text/css" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--lets you control the user's visible area of a web page.-->
+        <meta name="format-detection" content="telephone=no">
+        <!--stops IP address from becoming a telephone number-->
+        <title>Patricia Liu</title>
+        
+        <!--include link rel="_" later if I make this public-->
+
+        <meta name="descripton" content="Patricia Liu is a first year Computer Engineering student at the University of Waterloo.">
+        <style>html, * { text-rendering: auto; }</style>
+
+        <script>
+        </script>
+    </head>
+
+    <body class="home nav-showing">
+        <script>
+            //Make older browser aware of new HTML5 layout tags
+            'header nav aside article footer section'.replace(/\w+/g, function (n) { document.createElement(n) })
+            // for slideshow
+            
+            var startpath = "Pictures/home";
+            var maximages = 4;
+            var extension = ".png";
+            function slideshow(x) {
+                while (true){
+                    var currentimage = document.getElementById("bigpic").src;
+                    var dotat = currentimage.indexOf(extension);
+                    var nextnum = 1 + x;
+                    
+                    if (nextnum < 1) {
+                        nextnum = maximages;
+                    }
+                    //If nextnum is less than 1, wrap around to maximages.
+                    if (nextnum > maximages) {
+                        nextnum = 1;
+                    }
+                    //Create two-digit string from number (leading zero if less than 10).
+                    var twodigitnum = ("0" + nextnum).slice(-2);
+                    //Create new file name from two-digit number string.
+                    var showimg = startpath + twodigitnum + extension;
+                    showbig(showimg);
+                }
+            }
+            
+            function showbig(pic) {
+                document.getElementById("bigpic").src = pic;
+            }
+        </script>
+
+        <div id="wrapper" style="color:black;">
+            <!-- Start of wrapper -->
+            <header>
+                <div>
+                    <a href="m">
+                        <h1>
+                            <!--home link - not important for the first page-->
+                            <!--Pa-->
+                            <!--img src="" alt="Patricia Liu"> -->
+                            <!--make an image-->
+                        </h1>
+                    </a>
+                    <div class="home-logo">
+                        <h1 class="dt">
+                            <!--desktop-->
+                            Patricia Liu
+                            <!--img src="" alt="Patricia Liu"> -->
+                            <!--make an image-->
+                        </h1>
+                        <span style="color: white;">
+                           ":0"
+                           <br>
+                           "Welcome Good Sir"
+                        </span>
+                    </div>
+                </div>
+                <a href="#" class="menu" style="color: red;">o</a>
+            </header>
+            <!-- End of header -->
+            <!-- Start of content -->
+            <div id="content" class="home">
+                <section class="slideshow">
+                    <div style="overflow: hidden; position: relative; margin: 0 auto">
+                        <img src="Pictures/home01.png" id="bigpic" alt="" draggable="false" style="width: 1440px; height: 789px; left: 0px; top: 0px;">
+                    </div>
+                    <!--do this later-->
+                </section>
+            </div>
+            <!-- End of content -->
+            <!-- Footer section at page bottom -->
+            <footer>
+            </footer>
+        </div><!-- End wrapper -->
+        <nav>
+            <section class="nav-header">
+                <a href="m">
+                    <h1>
+                        PL
+                        <!--img src="" alt="PL"> -->
+                        <!--make an image-->
+                    </h1>
+                </a>
+                <a href="#" class="menu">x</a>
+            </section>
+            <div class="nav-links">
+                ::before
+                <div class="inner">
+                    <a href="Page2.html">About Me</a>
+                    <a href="Page3.html">Resume</a>
+                    <a href="Page4.html">Projects</a>
+                    <div class="socials">
+                        <a class="icon-linkedin" href="" target="_blank"> ::before </a>
+                        <a class="icon-github" href="" target="_blank"> ::before </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </body>
+</html>
