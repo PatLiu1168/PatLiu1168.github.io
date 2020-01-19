@@ -55,8 +55,9 @@ a img{
   border: none;
 }
 
-a img:active, a img: hover{
+a img:active, a img:hover{
   border: 3px solid white;
+  border-radius:25%;
 }
 
 .letter {
