@@ -380,8 +380,8 @@ a img:active, a img:hover{
 
 .overlay .closebtn {
   position: absolute;
-  top: 70px;
-  right: 75px;
+  top: 25px;
+  right: 28px;
   font-size: 50px;
 }
 
