@@ -80,7 +80,7 @@ a img:active, a img:hover{
   background-color: #1d1f20;
 }
 .letter:nth-child(1):before {
-  content: "3651728049";
+  content: "WMDJSYCNDK";
   margin-top: -168px;
   animation-name: letter1;
   animation-duration: 3.15s;
@@ -96,7 +96,7 @@ a img:active, a img:hover{
   }
 }
 .letter:nth-child(2):before {
-  content: "6094231875";
+  content: "NHSKDJAIDS";
   margin-top: -168px;
   animation-name: letter2;
   animation-duration: 2.555s;
@@ -112,7 +112,7 @@ a img:active, a img:hover{
   }
 }
 .letter:nth-child(3):before {
-  content: "9586041327";
+  content: "OISKXLCYAS";
   margin-top: 0px;
   animation-name: letter3;
   animation-duration: 0s;
@@ -128,7 +128,7 @@ a img:active, a img:hover{
   }
 }
 .letter:nth-child(4):before {
-  content: "0612845793";
+  content: "LSKDLWOANC";
   margin-top: -48px;
   animation-name: letter4;
   animation-duration: 1.0933333333s;
@@ -144,7 +144,7 @@ a img:active, a img:hover{
   }
 }
 .letter:nth-child(5):before {
-  content: "4876390521";
+  content: "POSICHWKSM";
   margin-top: -144px;
   animation-name: letter5;
   animation-duration: 0.24s;
@@ -160,7 +160,7 @@ a img:active, a img:hover{
   }
 }
 .letter:nth-child(6):before {
-  content: "2930148675";
+  content: "WMDITCHSEL";
   margin-top: -168px;
   animation-name: letter6;
   animation-duration: 1.75s;
@@ -176,7 +176,7 @@ a img:active, a img:hover{
   }
 }
 .letter:nth-child(7):before {
-  content: "5107943862";
+  content: "QWMDHKSODI";
   margin-top: -24px;
   animation-name: letter7;
   animation-duration: 1.74s;
@@ -192,7 +192,7 @@ a img:active, a img:hover{
   }
 }
 .letter:nth-child(8):before {
-  content: "0458367192";
+  content: "YDKSMXJSHD";
   margin-top: -72px;
   animation-name: letter8;
   animation-duration: 1.59s;
@@ -208,7 +208,7 @@ a img:active, a img:hover{
   }
 }
 .letter:nth-child(9):before {
-  content: "3856104927";
+  content: "UEKSMDJSHA";
   margin-top: 0px;
   animation-name: letter9;
   animation-duration: 0s;
@@ -224,7 +224,7 @@ a img:active, a img:hover{
   }
 }
 .letter:nth-child(10):before {
-  content: "5842369170";
+  content: "MDKSIUXRBD";
   margin-top: -96px;
   animation-name: letter10;
   animation-duration: 0.96s;
@@ -240,7 +240,7 @@ a img:active, a img:hover{
   }
 }
 .letter:nth-child(11):before {
-  content: "3869175024";
+  content: "KUDYXNDHSB";
   margin-top: -168px;
   animation-name: letter11;
   animation-duration: 1.89s;
@@ -256,7 +256,7 @@ a img:active, a img:hover{
   }
 }
 .letter:nth-child(12):before {
-  content: "6305481972";
+  content: "PAOTRICA";
   margin-top: -144px;
   animation-name: letter12;
   animation-duration: 1.2685714286s;
@@ -271,70 +271,7 @@ a img:active, a img:hover{
     margin-top: 24px;
   }
 }
-.letter:nth-child(13):before {
-  content: "0916354278";
-  margin-top: -168px;
-  animation-name: letter13;
-  animation-duration: 1.575s;
-  animation-delay: 0.55s;
-  animation-fill-mode: forwards;
-}
-@keyframes letter13 {
-  from {
-    margin-top: -168px;
-  }
-  to {
-    margin-top: 24px;
-  }
-}
-.letter:nth-child(14):before {
-  content: "3190748652";
-  margin-top: -48px;
-  animation-name: letter14;
-  animation-duration: 0.4533333333s;
-  animation-delay: 0.83s;
-  animation-fill-mode: forwards;
-}
-@keyframes letter14 {
-  from {
-    margin-top: -48px;
-  }
-  to {
-    margin-top: 24px;
-  }
-}
-.letter:nth-child(15):before {
-  content: "5631290478";
-  margin-top: -96px;
-  animation-name: letter15;
-  animation-duration: 0.064s;
-  animation-delay: 0.98s;
-  animation-fill-mode: forwards;
-}
-@keyframes letter15 {
-  from {
-    margin-top: -96px;
-  }
-  to {
-    margin-top: 24px;
-  }
-}
-.letter:nth-child(16):before {
-  content: "8295104367";
-  margin-top: 0px;
-  animation-name: letter16;
-  animation-duration: 0s;
-  animation-delay: 0.86s;
-  animation-fill-mode: forwards;
-}
-@keyframes letter16 {
-  from {
-    margin-top: 0px;
-  }
-  to {
-    margin-top: 24px;
-  }
-}
+
 
 /*Menu*/
 .overlay {
