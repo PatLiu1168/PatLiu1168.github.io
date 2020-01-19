@@ -16,7 +16,7 @@ body {
 }
 .titletext {
   position: absolute;
-  top: 45%;
+  top: 40%;
   left: 50%;
   width: 90%;
   font-size: 0;
@@ -49,6 +49,14 @@ p a:active, p a:hover{
 
 p a:hover:before, p a:hover::after {
   content:'_'
+}
+
+a img{
+  border: none;
+}
+
+a img:active, a img: hover{
+  border: 3px solid white;
 }
 
 .letter {
