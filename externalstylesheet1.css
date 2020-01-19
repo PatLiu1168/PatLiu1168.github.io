@@ -1,3 +1,15 @@
+header{
+  text-align:right;
+}
+
+header a{
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #eee;
+  text-decoration:none;
+}
+
 body {
   text-align: center;
   background-color: #1d1f20;
@@ -18,7 +30,7 @@ p {
   opacity: 0.3;
 }
 
-a{
+p a{
   background:0 0;
   color:#c8c8c8;
   text-decoration:underline;
@@ -30,12 +42,12 @@ a{
   text-decoration:underline;
 } */
 
-a:active, a:hover{
+p a:active, p a:hover{
   outline:dotted;
   text-decoration:none;
 }
 
-a:hover:before, a:hover::after {
+p a:hover:before, p a:hover::after {
   content:'_'
 }
 
