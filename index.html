@@ -21,66 +21,45 @@
     <body>
         <header>
         </header>
-            <!-- End of header -->
-            <!-- Start of content -->
+        <!-- Start of content -->
 
-        <script>
-            function cNav(){
-                document.getElementById("Nav").style.width = "0%";
-            }
-            function oNav(){
-                document.getElementById("Nav").style.width= "100%";
-            }
-        </script>
+        <!-- Navigation -->
+        {% include /includes/menu.html  %}
 
-            <div id="Nav" class="overlay">
-                <a href="javascript:void(0)" class="closebtn" onclick="cNav()">&times;</a>
-                <div style="text-align: center;" class="overlay-content">
-                    <a href="index.html" >Home</a>
-                    <a href=" " target="_blank">Projects</a>
-                    <a href="places.html">Places I've been</a>
-                    <a href=" " target="_blank">Filler</a>
-                    <a href=" " target="_blank">Filler</a>
-                </div>
+        <div class="titletext">
+            <div class="letters">
+                <span class="letter">P</span>
+                <span class="letter">A</span>
+                <span class="letter">T</span>
+                <span class="letter">R</span>
+                <span class="letter">I</span>
+                <span class="letter">C</span>
+                <span class="letter">I</span>
+                <span class="letter">A</span>
+                <span class="letter">_</span>
+                <span class="letter">L</span>
+                <span class="letter">I</span>
+                <span class="letter">U</span>
             </div>
+            <p>Bonjourno I am Patricia and welcome to my website!</p>
+            <p>Feel free to check out my 
+                <a href="resume.pdf" style="color:white" target="_blank">resume</a> 
+                or send me an email at 
+                <a href="mailto:p99liu@uwaterloo.ca" style="color:white" target="_blank">p99liu@uwaterloo.ca</a>
+            </p>
 
-            <div style="text-align: right;">
-                <span class="menubtn" style="font-size:50px; color:white; cursor:pointer; margin-right:20px;" onclick="oNav()"> &#9776;</span>
-            </div>
+            <a href="https://github.com/PatLiu1168" target="_blank">
+                <img src="Pictures/Github.png" alt="Octocat" style="width:25px; height:25px; margin: 10px;">
+            </a>
 
-            <div class="titletext">
-                <div class="letters">
-                    <span class="letter">P</span>
-                    <span class="letter">A</span>
-                    <span class="letter">T</span>
-                    <span class="letter">R</span>
-                    <span class="letter">I</span>
-                    <span class="letter">C</span>
-                    <span class="letter">I</span>
-                    <span class="letter">A</span>
-                    <span class="letter">_</span>
-                    <span class="letter">L</span>
-                    <span class="letter">I</span>
-                    <span class="letter">U</span>
-                </div>
-                <p>Bonjourno I am Patricia and welcome to my website!</p>
-                <p>Feel free to check out my 
-                    <a href="resume.pdf" style="color:white" target="_blank">resume</a> 
-                    or send me an email at 
-                    <a href="mailto:p99liu@uwaterloo.ca" style="color:white" target="_blank">p99liu@uwaterloo.ca</a>
-                </p>
-                <a href="https://github.com/PatLiu1168" target="_blank">
-                    <img src="Pictures/Github.png" alt="Octocat" style="width:25px; height:25px; margin: 10px;">
-                </a>
-                <a href="https://www.linkedin.com/in/patricia-liu-a4589b153/" target="_blank">
-                    <img src="Pictures/LinkedIn.png" alt="Squares are IN" style="width:25px; height:25px; margin: 10px;">
-                </a>
-              </div>
+            <a href="https://www.linkedin.com/in/patricia-liu-a4589b153/" target="_blank">
+                <img src="Pictures/LinkedIn.png" alt="Squares are IN" style="width:25px; height:25px; margin: 10px;">
+            </a>
+        </div>
 
             <!-- End of content -->
             <!-- Footer section at page bottom -->
-            <footer>
-            </footer>
-        </div><!-- End wrapper -->
+        <footer>
+        </footer>
     </body>
 </html>
