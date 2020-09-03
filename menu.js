@@ -17,7 +17,7 @@ document.write('\
         <a href="aboutme.html">About</a>\
         <a href="projects.html">Projects</a>\
         <a href=" " target="_blank">Filler</a>\
-        <a href="contact.html">Contact Me</a>\
+        <a href="filler.html">Filler Me</a>\
     </div>\
 </div>\
 \
