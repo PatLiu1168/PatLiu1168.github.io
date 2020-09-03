@@ -13,8 +13,8 @@ document.write('\
     <a href="javascript:void(0)" class="closebtn" onclick="cNav()">&times;</a>\
     <div style="text-align: center;" class="overlay-content">\
         <!-- target="_blank" is to make a new tab-->\
-        <a href="index.shtml" >Home</a>\
-        <a href="aboutme.shtml">About</a>\
+        <a href="index.html" >Home</a>\
+        <a href="aboutme.html">About</a>\
         <a href="">Projects</a>\
         <a href=" " target="_blank">Filler</a>\
         <a href=" " target="_blank">Contact Me</a>\
