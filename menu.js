@@ -15,9 +15,9 @@ document.write('\
         <!-- target="_blank" is to make a new tab-->\
         <a href="index.html" >Home</a>\
         <a href="aboutme.html">About</a>\
-        <a href="">Projects</a>\
+        <a href="projects.html">Projects</a>\
         <a href=" " target="_blank">Filler</a>\
-        <a href=" " target="_blank">Contact Me</a>\
+        <a href="contact.html">Contact Me</a>\
     </div>\
 </div>\
 \
