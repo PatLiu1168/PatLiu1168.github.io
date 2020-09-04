@@ -34,11 +34,6 @@ p a{
   outline: 0;
 }
 
-/* a:focus{
-  outline:0;
-  text-decoration:underline;
-} */
-
 p a:active, p a:hover{
   outline:dotted;
   text-decoration:none;
@@ -331,9 +326,63 @@ a img:active, a img:hover{
   }
 }
 
-
-/*ABOUT*/
-.about-me {
-  
+.about-me {        
+  text-align:left;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 3%;
 }
 
+h1{
+  display: inline-block;
+  position: relative;
+  overflow: scroll;
+  margin: 0 0;
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #eee;
+}
+
+ul{
+  font-family: sans-serif;
+  font-size:17px;
+  font-weight: 500;
+  color: #eee;
+  opacity: 0.5;
+}
+
+li{
+  padding-bottom: 5px;
+}
+
+.carousel{
+  text-align: center;
+}
+
+.carousel .arrow{
+  background-color: #1d1f20;
+}
+.carousel .arrow:hover, .carousel .arrow:active{
+  background-color: #818181;
+}
+
+#first_pic{
+  height:200px; 
+  padding: 10px;
+  overflow:scroll;
+}
+
+#mid_pic{
+  height:200px; 
+  padding: 10px;
+  overflow:scroll;
+}
+
+#last_pic{
+  height:200px; 
+  padding: 10px;
+  overflow:scroll;
+}

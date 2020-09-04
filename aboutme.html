@@ -15,21 +15,97 @@
         <style>html, * { text-rendering: auto; }</style>
         
         <script>
+            //photo carousel
+            var max_images=5;
+            var start_path="Pictures/image"
+            var extension=".png"
+
+            function calc_images(num){
+                var first_pic=document.getElementById("first_pic").src;
+                var mid_pic=document.getElementById("mid_pic").src;
+                var last_pic=document.getElementById("last_pic").src;
+
+                var index_after_num = first_pic.indexOf(extension);
+                var first_string_num = first_pic.substr(index_after_num - 2, 2);
+
+                var first_num = parseInt(first_string_num)+num;
+
+                if (first_num > max_images){
+                    first_num = 1;
+                    var mid_num=2;
+                    var last_num=3;
+                }
+                else if (first_num == max_images){
+                    var mid_num=1;
+                    var last_num=2;
+                }
+                else if (first_num < 1){
+                    first_num = max_images;
+                    var mid_num=1;
+                    var last_num=2;
+                }
+                else{
+                    var mid_num=first_num+1;
+                    var last_num=first_num+2;
+                }
+
+                var first_two_dig_num = ("0" + first_num).slice(-2);
+                var second_two_dig_num = ("0" + mid_num).slice(-2);
+                var third_two_dig_num = ("0" + last_num).slice(-2);
+
+                document.getElementById("first_pic").src=start_path+first_two_dig_num+extension;
+                document.getElementById("mid_pic").src=start_path+second_two_dig_num+extension;
+                document.getElementById("last_pic").src=start_path+third_two_dig_num+extension;
+                console.log("arrow pressed");
+            }
         </script>
     </head>
 
     <body>
         <header>
+            <!-- Navigation -->
+            <script src="menu.js"></script>
         </header>
         <!-- Start of content -->
 
-        <!-- Navigation -->
-        <script src="menu.js"></script>
-
         <div class="about-me">
-            <p>This page is under construction.</p>
+            <h1>Let me introduce myself . . .</h1>
+            <ul>
+                <li>I am a second year computer engineering student at the University of Waterloo</li>
+                <li>As an ISTJ, I have a relatively rational and honest outlook on life. However, my behavior cannot be limited by a personality test. I am open-minded and thrive in spontaneity. </li>
+                <!--change it-->
+                <li>I enjoy programming, baking, fitness, and difficult puzzles.</li>
+                <!--okay then-->
+                <li>Searching for oppotunities to expand my knowledge, and develop as a person and engineer.</li>
+            </ul>
+
+            <p style="margin-top: 8%;"></p>
+
+            <div class="carousel">
+                <table style="margin-left: auto; margin-right: auto;">
+                    <tr>
+                        <th style="width: 5%;">
+                            <a class="arrow" onclick="calc_images(1)" style="text-align:left; margin-left: 10px; padding:2px">&#10094;</a>
+                        </th>
+                        <th style="width: 1000px;">
+                            <img src="Pictures/image01.png" alt= "Picture" id="first_pic">
+                            <img src="Pictures/image02.png" alt= "Picture" id="mid_pic">
+                            <img src="Pictures/image03.png" alt= "Picture" id="last_pic">
+                        </th>
+                        <th style="width: 5%;">
+                            <a class="arrow" onclick="calc_images(-1)" style="text-align:right; margin-right: 10px; padding:2px">&#10095;</a>
+                        </th>
+                    </tr>
+                </table>            
+            </div>
+
+            <br clear="">
+
         </div>
 
+
+
+        <p>This page is under construction.</p>
         <!-- End of content -->
         <footer>
             <script src="footer.js"></script>
