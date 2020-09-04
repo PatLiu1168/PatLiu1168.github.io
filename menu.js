@@ -16,8 +16,8 @@ document.write('\
         <a href="index.html" >Home</a>\
         <a href="aboutme.html">About</a>\
         <a href="projects.html">Projects</a>\
-        <a href=" " target="_blank">Filler</a>\
-        <a href="filler.html">Filler Me</a>\
+        <a href="filler.html">Filler</a>\
+        <a href="filler2.html">Filler Me</a>\
     </div>\
 </div>\
 \
