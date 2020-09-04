@@ -15,4 +15,6 @@ document.write('\
 <a href="Resume.pdf" target="_blank">\
 <img src="Pictures/resume.png" alt="Resume" style="width:20px; height:20px; margin: 10px;">\
 </a>\
+<br>\
+<p>Made by Patricia Liu</p>\
 ');
