@@ -370,21 +370,21 @@ li{
 }
 
 #first_pic{
-  height:200px;
+  height:225px;
   vertical-align: middle;
   padding: 10px;
   overflow:scroll;
 }
 
 #mid_pic{
-  height:200px; 
+  height:225px; 
   vertical-align: middle;
   padding: 10px;
   overflow:scroll;
 }
 
 #last_pic{
-  height:200px; 
+  height:225px; 
   vertical-align: middle;
   padding: 10px;
   overflow:scroll;
