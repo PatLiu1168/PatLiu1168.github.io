@@ -12,7 +12,7 @@ document.write('\
 <img src="Pictures/mail.png" alt="Mail" style="width:20px; height:20px; margin: 10px;">\
 </a>\
 \
-<a href="Resume.pdf" target="_blank">\
+<a href="resume.pdf" target="_blank">\
 <img src="Pictures/resume.png" alt="Resume" style="width:20px; height:20px; margin: 10px;">\
 </a>\
 <p>Made by Patricia Liu</p>\
