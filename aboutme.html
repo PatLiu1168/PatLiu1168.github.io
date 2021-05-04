@@ -21,46 +21,24 @@
             var extension=".png"
 
             function calc_images(num){
-                var first_pic=document.getElementById("first_pic").src;
                 var mid_pic=document.getElementById("mid_pic").src;
-                var last_pic=document.getElementById("last_pic").src;
 
-                var index_after_num = first_pic.indexOf(extension);
-                var first_string_num = first_pic.substr(index_after_num - 2, 2);
+                var index_after_num = mid_pic.indexOf(extension);
+                var first_string_num = mid_pic.substr(index_after_num - 2, 2);
 
                 var first_num = parseInt(first_string_num)+num;
 
                 if (first_num > max_images){
                     first_num = 1;
-                    var mid_num=2;
-                    var last_num=3;
-                }
-                else if (first_num == max_images){
-                    var mid_num=1;
-                    var last_num=2;
                 }
                 else if (first_num < 1){
                     first_num = max_images;
-                    var mid_num=1;
-                    var last_num=2;
-                }
-                else if(first_num == max_images -1){
-                    var mid_num=first_num+1;
-                    var last_num=1;
-                }
-                else{
-                    var mid_num=first_num+1;
-                    var last_num=first_num+2;
                 }
                 console.log(first_num);
 
                 var first_two_dig_num = ("0" + first_num).slice(-2);
-                var second_two_dig_num = ("0" + mid_num).slice(-2);
-                var third_two_dig_num = ("0" + last_num).slice(-2);
 
-                document.getElementById("first_pic").src=start_path+first_two_dig_num+extension;
-                document.getElementById("mid_pic").src=start_path+second_two_dig_num+extension;
-                document.getElementById("last_pic").src=start_path+third_two_dig_num+extension;
+                document.getElementById("mid_pic").src=start_path+first_two_dig_num+extension;
             }
         </script>
     </head>
@@ -71,39 +49,53 @@
             <script src="menu.js"></script>
         </header>
         <!-- Start of content -->
-
-        <div class="about-me">
-            <h1>Let me introduce myself . . .</h1>
-            <ul>
-                <li>I am a second year computer engineering student at the University of Waterloo</li>
-                <li>As an ISTJ, I have a relatively rational and honest outlook on life. However, my behavior cannot be limited by a personality test. I am open-minded and thrive in spontaneity. </li>
-                <!--change it-->
-                <li>Passionate about programming, baking, fitness, autonomous technology, and petting cats.</li>
-                <!--okay then-->
-                <li>Searching for opportunities to learn and develop as a person and engineer.</li>
-            </ul>
-
-            <div class="carousel">
-                <table style="margin-left: auto; margin-right: auto; height: 330px;">
-                    <tr>
-                        <th style="width: 5%;">
-                            <a class="arrow" onclick="calc_images(-1)" style="text-align:left; margin-left: 10px; padding:2px; color: white;">&#10094;</a>
-                        </th>
-                        <th style="width: 1000px;">
-                            <img src="Pictures/image01.png" alt= "Picture" id="first_pic">
-                            <img src="Pictures/image02.png" alt= "Picture" id="mid_pic">
-                            <img src="Pictures/image03.png" alt= "Picture" id="last_pic">
-                        </th>
-                        <th style="width: 5%;">
-                            <a class="arrow" onclick="calc_images(1)" style="text-align:right; margin-right: 10px; padding:2px; color: white;">&#10095;</a>
-                        </th>
-                    </tr>
-                </table>            
-            </div>
-            <!--add proper images later-->
-        </div>
         
-        <p>This page is under construction.</p>
+        <div class="about-me">
+            <table style="margin-left: auto; margin-right: auto; height: 435px;">
+                <tr>
+                    <th style="width: 58%">
+                        <h1>Let me introduce myself . . .</h1>
+
+                        <div style="overflow:auto; height:55%">
+                            <p style="margin-left: 5%; font-family: sans-serif; font-size:17px; font-weight: 500; color: #eee; opacity: 0.5;">
+                                <b style="font-size:20px">Hi! My name is Patricia Liu.</b> <br>
+                                I am a second-year computer engineering student at the University of Waterloo with a passion for programming and autonomous technology. 
+                                Some of my other hobbies include baking, fitness, and playing video games (in moderation of course). 
+                                As an ISTJ, I have a relatively rational and honest outlook on life. 
+                                However, my behavior cannot be limited by a personality test. 
+                                I am open-minded and thrive in spontaneity. 
+                                Currently, I am searching for opportunities to learn new skillsets and develop as an engineer. <br>
+                                <br>
+                                In the past, I've worked at Blackberry QNX as a member of the Core OS Test Team and the Autonomous Vehicle Innovation Centre (AVIC). 
+                                With the Core OS Test Team, I was responsible for writing regression tests that verify the thread-safe and signal handler safe capabilities of libc API in the QNX RTOS. 
+                                This experience was a fantastic opportunity to learn about multithreading, microkernel operating systems, and message passing. 
+                                With AVIC, I was involved with the porting of ROS2 and AutowareAuto to QNX. 
+                                I also worked on integrating the drive-by-wire system of a Lincoln MKZ to AutowareAuto and created a ROS2 interface for kvaser devices. 
+                                Not only did I gain a deeper understanding of QNX, but I've also become more comfortable with cross-compiling, CMake, and the canbus. <br>
+                            </p>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="carousel">
+                            <table style="margin-left: auto; margin-right: auto;">
+                                <tr>
+                                    <th style="width: 2%;">
+                                        <a class="arrow" onclick="calc_images(-1)" style="text-align:left; margin-left: 10px; padding:2px; color: white;">&#10094;</a>
+                                    </th>
+                                    <th style="width: 400px">
+                                        <img src="Pictures/image01.png" alt= "Picture" id="mid_pic">
+                                    </th>
+                                    <th style="width: 2%;">
+                                        <a class="arrow" onclick="calc_images(1)" style="text-align:right; margin-right: 10px; padding:2px; color: white;">&#10095;</a>
+                                    </th>
+                                </tr>
+                            </table>            
+                        </div>
+                    </th>
+                </tr>
+            </table>
+        </div>
+
         <!-- End of content -->
         <footer>
             <script src="footer.js"></script>
